@@ -28,8 +28,9 @@ void particle::advance(float t, vec3d force)
 	else if(position.x >= LENGTH)
 		position.x = -LENGTH;
 
-	if(position.y <= -LENGTH)
-		position.y = LENGTH;
+	if (position.y <= -LENGTH)
+		velocity.y = -velocity.y;
+		//position.y = LENGTH;
 	else if(position.y >= LENGTH)
 		position.y = -LENGTH;
 
