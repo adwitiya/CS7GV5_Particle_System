@@ -15,4 +15,4 @@ const int MAX_MASS = 10;
 
 const int FORCE_MAG = 2000;
 
-const int MAX_PARTICLES = 1000;
+const int MAX_PARTICLES = 5000;
