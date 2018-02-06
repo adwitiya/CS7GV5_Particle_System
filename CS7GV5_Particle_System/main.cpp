@@ -15,7 +15,7 @@ using namespace std;
 particle_system p(NUMBER_OF_PARTICLES);
 particle_system q(NUMBER_OF_PARTICLES);
 particle_system z(NUMBER_OF_PARTICLES);
-float win_width = 800, win_height = 600;
+float win_width = 1280, win_height = 720;
 
 //Called when a key is pressed
 void handle_keypress(unsigned char key, int x, int y)
@@ -39,6 +39,11 @@ void handle_keypress(unsigned char key, int x, int y)
 	case 's':
 	case 'S':
 		SOIL_save_screenshot("screenshot.bmp",SOIL_SAVE_TYPE_BMP,0, 0, 1024, 768);
+		break;
+
+	case 'f':
+	case 'F':
+		
 		break;
 
     case 27:
@@ -117,6 +122,7 @@ void draw()
 	glutSwapBuffers();
 	glutPostRedisplay();
 }
+
 
 
 //Handle mouse movement

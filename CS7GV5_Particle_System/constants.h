@@ -2,9 +2,9 @@
 
 //constants
 
-const float DELTA = 1;
+const float DELTA = 3;
 const int NUMBER_OF_PARTICLES = 333;
-const float LENGTH = 110.0;
+const float LENGTH = 200.0;
 
 const int MIN_INIT_VELOCITY = 10;
 const int MAX_INIT_VELOCITY = 50;

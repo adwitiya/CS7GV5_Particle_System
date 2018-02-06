@@ -29,6 +29,7 @@ void particle_system::advance(float time)
 
 }
 
+
 //Function to set gravity point
 void particle_system::set_gravity(vec3d gravity){
 	gravity_point = gravity;
